@@ -9,6 +9,14 @@
 </head>
 
 <body>
+	<header>
+		<nav>
+			<a href="index.html">Strona główna</a>
+			<a href="nauka-html.html">O HTML</a>
+			<a href="nauka-css.html">O CSS</a>
+			<a href="nauka-js.html">O JavaScript</a>
+		</nav>
+	</header>
 	<main>
 		<header id="top">
 			<h1>WTF: Co ten Frontend - Szkolenie</h1>
@@ -31,24 +39,7 @@
 			<article>
 				<h3>Moduł II</h3>
 				<p>Podstawy HTML, CSS, Devtoolsy, Fromatowanie kodu, Algorytmy, Kanban</p>
-				<section>
-					<h4>Budowa znaczników</h4>
-					<p>&ltznacznik atrybut="wartość">treść&lt/znacznik>
-					</p>
-					<p>Semantyczny - mający znaczenie</p>
-					<p>HTML Validator: https://validator.w3.org/nu/</p>
-				</section>
-				<section>
-					<h4>Budowa reguły CSS</h4>
-					<p>selektor {
-						właściwość: wartość;
-						}
-					</p>
-				</section>
-				<section>
-					<h4>Linkowanie stylów CSS</h4>
-					<p>&ltlink href="style.css" rel="stylesheet" type="text/css"></p>
-				</section>
+
 				<section>
 					<h4>Devtoolsy</h4>
 					<p>W devtoolsach w Stylach treść pochyła to domyślne style przeglądarkowe dla danego elementu</p>
@@ -77,7 +68,7 @@
 			</article>
 			<article>
 				<h3>Moduł III</h3>
-				<p>GIT</p>
+				<p>GIT i inne</p>
 				<section>
 					<h4>GIT i GitHub</h4>
 					<p>GIT - system kontroli wersji</p>
@@ -100,41 +91,7 @@
 						komendy na stronie w terminalu, żeby podpiąć repozytorium zdalne do lokalnego</p>
 					<p>Aby wrzucic kod na GitHuba to w terminalu git push</p>
 				</section>
-				<section>
-					<h4>Powrót do HTML</h4>
-					<p>br to nowa linia <br> b-pogrubienie, i-kursywa, ale bez znaczenia semantycznego, tylko do wyroznienia
-						tekstu i tego juz nie robimy bo odpowiadaja za to style CSS, natomiast strong (jak b) i em (jak i) sa lepsze
-						do wyroznienia jakiegos elementu, nadaja znaczenie <br> byl tez kiedys tag u to podkreslenie - ale to jak b
-						i i - nie uzywamy go, to niby do okreslenia nietekstowego bledu </p>
-					<h4>Linki</h4>
-					<p>Konstrukcja to: &lta href="" target="">opis&lt/a><br> a to od anchor, uzywamy do linków i łącz wewnątrz
-						dokumentu<br> target to np. _blank</p>
-					<p>Nawigacja po elementach strony:</p>
-					<p>&lt<strong>element</strong>id="moj-identyfikator></p>
-					<p>i potem &lta href="<strong>#</strong>id> </p>
-					<p class="czerwony"> Jak dodac emoji?</p>
-					<p>W main nie trzymamy to co bedzie sie wyswietlalo na innych podstronach, wiec wrzucamy header poza main i
-						bedzie on sluzyl do navigacji i footer tez poza main - i wtedy w headerze uzywamy nav. A zeby nie kopiowac
-						tego dla kazdej strony to sa szablony</p>
-					<h4>Images</h4>
-					<p> &ltimg src="" alt=""> mozna na koncu domknac lub nie</p>
-					<h4>Kontynuacja CSS</h4>
-					<p>Style inline: &ltznacznik style="color:yellow;">tresc&lt/znacznik> Style inlinowe maja wieksze prawo
-						dzialania niz style w pliku stylow np po id</p>
-					<p class="czerwony">Atrybut class="smth" do grupowania elementów. Kropka to selektor class</p>
-					<p>Innym sposobem do grupowania elementow to hash #. Ale to jest id i moze byc tylko jedno id na stronie</p>
-					<p class="czerwony">Pytanie do czego sie wykorzystuje id?</p>
-					<p>Reguła o nazwie important - w stylach dajemy np color:blue !important; i to nam nadpisuje style</p>
-					<p class="czerwony">Pytanie czy important sie stosuje do jednej wlasnosci czy mozna np w paragrafie uzyc tego
-						jakos globalnie ze wszystkie cechy beda important bez pisania tego przy kazdej regule</p>
-					<p>Łączenie selektorow: w stylach - section a i wtedy wszystkie a w section maja dana wlasnosc lub np klasy
-						my-article p</p>
-					<img src="waznoscstyli.png">
-					<h4>Smth-case czyli nazywanie plikow/klas</h4>
-					<p>camelCase, kebab-case, snake_case, PascalCase</p>
-					<h4>Inherit czyli dziedziczenie</h4>
-					<p>w cssie wpisujemy color: inherit;</p>
-				</section>
+
 			</article>
 		</section>
 	</main>
@@ -144,7 +101,7 @@
 	</footer>
 
 	<script src="main.js"></script>
-	
+
 </body>
 
 </html>

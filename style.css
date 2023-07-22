@@ -1,9 +1,26 @@
 body {
     background: #fefefe;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+nav {
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: 600;
+}
+
+nav a {
+    text-decoration: none;
+    color: #610f72;
+}
+
+
 h1 {
-    color: red;
+    color: #610f72;
+}
+
+h3 {
+    background-color: #f3b6ff;
 }
 
 .czerwony {
