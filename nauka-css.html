@@ -2,77 +2,87 @@
 <html lang="pl">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>WTF: Co Ten Frontend Szkolenie - O CSS</title>
-	<link href="style.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WTF: Co Ten Frontend Szkolenie - O CSS</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-	<header>
-		<nav>
-			<a href="index.html">Strona główna</a>
-			<a href="nauka-html.html">O HTML</a>
-			<a href="nauka-css.html">O CSS</a>
-			<a href="nauka-js.html">O JavaScript</a>
-		</nav>
-	</header>
-	<main>
-		<header id="top">
-			<h1>O CSS</h1>
-		</header>
-		
-		<section>
-			<h2>Notatki z WTF: Co Ten Frontend</h2>
+    <header>
+        <nav>
+            <a href="index.html">Strona główna</a>
+            <a href="nauka-html.html">O HTML</a>
+            <a href="nauka-css.html">O CSS</a>
+            <a href="nauka-js.html">O JavaScript</a>
+        </nav>
+    </header>
 
-			<article>
-				<h3>Moduł II</h3>
-				<p>Podstawy HTML, CSS, Devtoolsy, Fromatowanie kodu, Algorytmy, Kanban</p>
-				<section>
-					<h4>Budowa reguły CSS</h4>
-					<p>selektor {
-						właściwość: wartość;
-						}
-					</p>
-				</section>
-				<section>
-					<h4>Linkowanie stylów CSS</h4>
-					<p>&lt link href="style.css" rel="stylesheet" type="text/css"></p>
-				</section>
+    <main>
+        <header id="top">
+            <h1>O CSS</h1>
+        </header>
 
-			</article>
-			<article>
-				<h3>Moduł III</h3>
-				<p>GIT i inne</p>
+        <section>
+            <h2>Notatki z WTF: Co Ten Frontend</h2>
 
-				<section>
-					<h4>Kontynuacja CSS</h4>
-					<p>Style inline: &lt znacznik style="color:yellow;">tresc &lt /znacznik> Style inlinowe maja wieksze prawo
-						dzialania niz style w pliku stylow np po id</p>
-					<p class="czerwony">Atrybut class="smth" do grupowania elementów. Kropka to selektor class</p>
-					<p>Innym sposobem do grupowania elementow to hash #. Ale to jest id i moze byc tylko jedno id na stronie</p>
-					<p class="czerwony">Pytanie do czego sie wykorzystuje id?</p>
-					<p>Reguła o nazwie important - w stylach dajemy np color:blue !important; i to nam nadpisuje style</p>
-					<p class="czerwony">Pytanie czy important sie stosuje do jednej wlasnosci czy mozna np w paragrafie uzyc tego
-						jakos globalnie ze wszystkie cechy beda important bez pisania tego przy kazdej regule</p>
-					<p>Łączenie selektorow: w stylach - section a i wtedy wszystkie a w section maja dana wlasnosc lub np klasy
-						my-article p</p>
-					<img src="waznoscstyli.png" alt="Waznosc styli">
-					<h4>Smth-case czyli nazywanie plikow/klas</h4>
-					<p>camelCase, kebab-case, snake_case, PascalCase</p>
-					<h4>Inherit czyli dziedziczenie</h4>
-					<p>w cssie wpisujemy color: inherit;</p>
+            <article>
+                <h3>Moduł II</h3>
+                <p>Podstawy HTML, CSS, Devtoolsy, Fromatowanie kodu, Algorytmy, Kanban</p>
+               
+                <section>
+                    <h4>Budowa reguły CSS</h4>
+                    <p>selektor {
+                        właściwość: wartość;
+                        }
+                    </p>
+                </section>
 
-				</section>
-			</article>
-		</section>
-	</main>
+                <section>
+                    <h4>Linkowanie stylów CSS</h4>
+                    <p>&lt link href="style.css" rel="stylesheet" type="text/css" &gt</p>
+                </section>
+                
+            </article>
 
-	<footer>
-		<p>To jest stopka. <a href="#top">Idz do gory</a></p>
-	</footer>
+            <article>
+                <h3>Moduł III</h3>
+                <p>GIT i inne</p>
 
-	<script src="main.js"></script>
+                <section>
+                    <h4>Kontynuacja CSS</h4>
+                    <p>Style inline: &lt znacznik style="color:yellow;" &gt tresc &lt /znacznik &gt Style inlinowe maja
+                        wieksze prawo
+                        dzialania niz style w pliku stylow np po id</p>
+                    <p class="czerwony">Atrybut class="smth" do grupowania elementów. Kropka to selektor class</p>
+                    <p>Innym sposobem do grupowania elementow to hash #. Ale to jest id i moze byc tylko jedno id na
+                        stronie</p>
+                    <p class="czerwony">Pytanie do czego sie wykorzystuje id?</p>
+                    <p>Reguła o nazwie important - w stylach dajemy np color:blue !important; i to nam nadpisuje style
+                    </p>
+                    <p class="czerwony">Pytanie czy important sie stosuje do jednej wlasnosci czy mozna np w paragrafie
+                        uzyc tego
+                        jakos globalnie ze wszystkie cechy beda important bez pisania tego przy kazdej regule</p>
+                    <p>Łączenie selektorow: w stylach - section a i wtedy wszystkie a w section maja dana wlasnosc lub
+                        np klasy
+                        my-article p</p>
+                    <img src="waznoscstyli.png" alt="Waznosc styli">
+                    <h4>Smth-case czyli nazywanie plikow/klas</h4>
+                    <p>camelCase, kebab-case, snake_case, PascalCase</p>
+                    <h4>Inherit czyli dziedziczenie</h4>
+                    <p>w cssie wpisujemy color: inherit;</p>
+                </section>
+
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>To jest stopka. <a href="#top">Idz do gory</a></p>
+    </footer>
+
+    <script src="main.js"></script>
 
 </body>
 
