@@ -5,16 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WTF: Co Ten Frontend Szkolenie - O CSS</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="/normalize.css" rel="stylesheet" type="text/css">
+	<link href="/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="index.html">Strona główna</a>
-            <a href="nauka-html.html">O HTML</a>
-            <a href="nauka-css.html">O CSS</a>
-            <a href="nauka-js.html">O JavaScript</a>
+            <a href="/index.html">Strona główna</a>
+            <a href="/nauka-html.html">O HTML</a>
+            <a href="/nauka-css.html">O CSS</a>
+            <a href="/nauka-js.html">O JavaScript</a>
         </nav>
     </header>
 
@@ -66,13 +67,88 @@
                     <p>Łączenie selektorow: w stylach - section a i wtedy wszystkie a w section maja dana wlasnosc lub
                         np klasy
                         my-article p</p>
-                    <img src="waznoscstyli.png" alt="Waznosc styli">
+                    <img src="/waznoscstyli.png" alt="Waznosc styli">
+                </section>
+
+                <section>
                     <h4>Smth-case czyli nazywanie plikow/klas</h4>
                     <p>camelCase, kebab-case, snake_case, PascalCase</p>
+                </section>
+
+                <section>
                     <h4>Inherit czyli dziedziczenie</h4>
                     <p>w cssie wpisujemy color: inherit;</p>
                 </section>
 
+            </article>
+
+            <article>
+                <h3>Moduł IV</h3>
+                <p>CSS - pozycjonowanie, JS, Serwer, DOM</p>
+
+                <section>
+                    <h4>Display</h4>
+                    <p>display: block - powoduje, że element zajmuje całą szerokość i spycha pozostałe elementy niżej. Działa z height i width, oraz max-width i max-height</p>
+                    <p>dispaly: inline - zamienia elementy, które miały domyślny styl przeglądarki display: block, na takie, które zajmują tyle miejsca ile contentu mają w środku. Nie działa na te inline elementy width i height</p>
+                    <p>display: inline-block - układają się inlinowo, ale te, które się nie mieszczą spadają w dół. Działa z width i height</p>
+                    <p>width - ustalona szerokosc na sztywno</p>
+                    <p>height - ustalona wysokosc na sztywno</p>
+                    <p>max-width - wskazuje max szerokosc wyswietlania elementu, ale przy zmniejszeniu okna przeglądarki szerokość będzie się dopasowywać</p>
+                    <p>max-height - wskazuje max wysokosc wisyweitlania elementu, czyli jesli content bedzie dluzszy to wyjdzie poza ten element, bo element nie urosnie</p>
+                    <p>min-width - element ma podane minimum szerokosci i jesli okno przegladarki bedzie mniejsze to sie pojawi scroll</p>
+                    <p>min-height - element ma podane minimum wysokosci, ale jesli content jest dluzszy to sie kontener rozszerzy</p>
+                    <p>overflow: hidden - ucina tresc ktora nie miesci sie w kontenerze</p>
+                    <p>overflow: auto - generuje scrolla contentu w srodku kontenera jesli content sie nie mieści, ale tylko w tych przypadkach jak jest mniejszy</p>
+                    <p>overflow: clip - dziala jak hidden, ale przy bardziej zaawansowanych stronach sie ją stosuje</p>
+                    <p>overflow: scroll - dodaje scrolla dla wszystkich kontenerow, bez znaczenia czy tresc sie miesci, ale nie zadziala jesli content bedzie mniejszy</p>
+                    <p>overflow: visible - tresc wystaje poza kontener</p>
+                </section>
+
+                <section>
+                    <h4>Jednostki</h4>
+                    <p>0 to zawsze 0, nie potrzebuje jednostki</p>
+                    <p>px - piksele</p>
+                    <p>% - procenty, ale dla height nie definiujemy, bo przeglądarka często nie wie do czego ma się odnieść, a jesli chcemy użyc procentowych wysokosci to dla html i body musimy ustawic height: 100%</p>
+                    <p>vw - viewport width, szerokosc okna przegladarki, nie bierze pod uwage marignesow domyslnie zdefiniowanych w elementach</p>
+                    <p>vh - viewport height</p>
+                </section>
+
+                <section>
+                    <h4>Odległości</h4>
+                    <p>padding-top, padding-right, padding-bottom, padding-left, albo padding: top right bottom left (jak w zegarku) albo padding: top-bottom right-left;</p>
+                    <p>border-width, border-style, border-color albo border: width style color np. border 3px solid #fff;rowniez border-top, border-right itd.</p>
+                    <p>border-radius - działa też bez definicji ramki, piksele lub procenty</p>
+                    <p>margin - tak jak padding z tym, ze jesli dwa elementy wystepuja obok siebie np. box i box-2 i jeden bedzie mial 100px a drugi 120px to one na siebie nachodza i odleglosc miedzy box a box-2 bedzie wynosila 120px, ponnadto margin: top-bottom auto spowoduje ze element zostanie wysrodkowany</p>
+                    <p>box-sizing: content-box (domyslnie, nie trzeba ustawiac) lub border-box - width i height sie bardziej licza, a nie content, czyli jesli ustawimy width: 200px to jaki by nie był padding czy border, box zawsze będzie mial 200px szerokosci, a content sie dostosuje do paddingu i bordera</p>
+                    <img src="/content-border-box.png">
+                </section>
+
+                <section>
+                    <h4>Pozycjonowanie</h4>
+                    <p>position: static - nie jest zdefiniowane, ale bierze pod uwage czy elementy wyswietlaja sie blokowo, jedno pod drugim</p>
+                    <p>position: absolute - ustawia się względem rodzica i względem rodzica możeby go przesuwac używając top, right, botton, left ale krawedz jest liczona od 0x 0y rodzica np. diva ale nie liczymy bordera. Służy np. do przyklejenia czegoś do dołu kontenera i nawet jeśli zwięszymy wielkość kontenera to ten element zostanie przyklejony</p>
+                    <p>z-index: 10 - odpowiada za kolejność warstw. Im wyzsza wartosc z-index ten element będzie wyżej w hierarchii, bo to co jest na koncu dokumentu to sie renderuje pozniej i nadpisuje to co wyzej. Żeby zobaczyć warstwy to w devtoolsach w Miscrosoft Edge można otworzyc ctrl+shift+p i wpisac 3d view</p>
+                    <p class="czerwony">z-index: auto??</p>
+                    <p class="czerwony">position: relative</p>
+                    <p>position: fixed - odpowiada za przyklejenie elementu do okna przeglądarki, np do przyklejenia menu</p>
+                    <p>position: sticky - np. do przyklejenia naglowka gdy mamy wiecej tekstu w kontenerze, ale sticky nie zadziała, gdy mamy overflow. Również nie zadziała np. bez dodania top. Działa tylko w obrębie rodzica - nie wysunie nam się poza rodzica. Zachowuje się blokowo, dopóki nie scrollujemy</p>
+                    <p>float: left - treść opływa dookoła ten element. Nie poleca uzywania tego, ale mozna do obrazka wrzucic, bo nie służy do budowania layoutów, np wyswietlania menu bocznego. Do czyszczenia elementow miedzy dwoma floatami, aby tresc spadnia podnizej tych dwoch sluzy clear: both, ale div z taka klasa tez musi istnieć</p>
+                </section>
+
+                <section>
+                    <h4>Ujednolicanie stylów</h4>
+                    <p>Normalizacja - ujednolicanie stylow miedzy przegladarkami, normalize.css - sciagnac link z githuba</p>
+                    <p>Reset - uzycie gwiazdki <code>* {margin:0; outline:none; - usuwa nawet obramowanie focusu, wiec lepiej nie ruszac}</code> powoduje ze wszystkie style są brane pod uwagę, odchodzi do lamusa. Dla innych to moze byc <code>*, *:before, *:hover {}</code></p>
+                </section>
+
+                <section>
+                    <h4>BEM</h4>
+                    <p>BEM = B - block E - element M - modifier, sposob zapisu klas</p>
+                    <p><code>block__element--modifier</code></p>
+                    <p>B odpowiada za nadrzędny element</p>
+                    <p>E odpowiada za część bloku (nie musi być bezpośrednim dzieckiem)</p>
+                    <p>M odpowiada za modyfikator - jesli element wystepuje w kilku wariantach tworzymy dodatkowa klase </p>
+                </section>
             </article>
 
         </section>
@@ -82,7 +158,7 @@
         <p>To jest stopka. <a href="#top">Idz do gory</a></p>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="/main.js"></script>
 
 </body>
 

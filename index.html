@@ -5,16 +5,17 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>WTF: Co Ten Frontend Szkolenie</title>
-	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="/normalize.css" rel="stylesheet" type="text/css">
+	<link href="/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 	<header>
 		<nav>
-			<a href="index.html">Strona główna</a>
-			<a href="nauka-html.html">O HTML</a>
-			<a href="nauka-css.html">O CSS</a>
-			<a href="nauka-js.html">O JavaScript</a>
+			<a href="/index.html">Strona główna</a>
+			<a href="/nauka-html.html">O HTML</a>
+			<a href="/nauka-css.html">O CSS</a>
+			<a href="/nauka-js.html">O JavaScript</a>
 		</nav>
 	</header>
 
@@ -31,11 +32,11 @@
 
 		<section>
 			<h2>Notatki z WTF: Co Ten Frontend</h2>
-		
+
 			<article>
 				<h3>Moduł I</h3>
 				<p>Omówienie czym jest frontend, konfiguracja Visual Studio, warstwy strony internetowej</p>
-				
+
 				<section>
 					<h4>Warstwy strony internetowej</h4>
 					<p>JavaScript - CSS - HTML - Treść</p>
@@ -76,11 +77,11 @@
 				</section>
 
 			</article>
-			
+
 			<article>
 				<h3>Moduł III</h3>
 				<p>GIT i inne</p>
-			
+
 				<section>
 					<h4>GIT i GitHub</h4>
 					<p>GIT - system kontroli wersji</p>
@@ -105,7 +106,29 @@
 				</section>
 
 			</article>
-			
+
+			<article>
+				<h3>Moduł IV</h3>
+				<p>CSS - pozycjonowanie, JS, Serwer, DOM</p>
+
+				<section>
+					<h4>Lokalny serwer</h4>
+					<p>Aby odpalic lokalny serwer nalezy sciagnac rozszerzenie/plugin LiveServer, nastepnie kliknac na dole ekranu Go Live. Wtedy strona będzie się odświeżać automatycznie po wprowadzeniu i zapisaniu zmian.
+					</p>
+					<p>W celu otwarcia na tel. komorkowym nalezy localhost 127.itd. zamienic na adres ip - IPv4 oraz ustawic na polaczenia w sieci prywatnej. Aby to zadziałało zarówno telefon jak i komputer muszą być w tej samej sieci wifi</p>
+				</section>
+
+				<section>
+					<h4>DOM</h4>
+					<p>DOM - document object model</p>
+					<p>DOM jest w devtoolsach, jest to pomost dla JS, jest w devtoolsach bo mozemy podmienic np. hedaer w JS i w devtoolsach bedzie to juz mialo podmieniona wartosc</p>
+					<p>w JS: <code>document.querySelector('.selector')</code></p>
+					<p>w jQuery: <code>$('.selector')</code></p>
+					<p>w BEM: block__element--js - nie do stylowania tylko wykorzystywania w JS, np. page-header__heading-js</p>
+					<p>jesli w LiveServer nie dziala od razu to <code>script DEFER src="/main.js"</code></p>
+				</section>
+			</article>
+
 		</section>
 	</main>
 
@@ -113,7 +136,7 @@
 		<p>To jest stopka. <a href="#top">Idz do gory</a></p>
 	</footer>
 
-	<script src="main.js"></script>
+	<script defer src="/main.js"></script>
 
 </body>
 

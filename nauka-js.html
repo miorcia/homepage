@@ -2,50 +2,81 @@
 <html lang="pl">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>WTF: Co Ten Frontend Szkolenie - O JavaScript</title>
-	<link href="style.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WTF: Co Ten Frontend Szkolenie - O JavaScript</title>
+    <link href="/normalize.css" rel="stylesheet" type="text/css">
+    <link href="/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-	<header>
-		<nav>
-			<a href="index.html">Strona główna</a>
-			<a href="nauka-html.html">O HTML</a>
-			<a href="nauka-css.html">O CSS</a>
-			<a href="nauka-js.html">O JavaScript</a>
-		</nav>
-	</header>
+    <header>
+        <nav>
+            <a href="/index.html">Strona główna</a>
+            <a href="/nauka-html.html">O HTML</a>
+            <a href="/nauka-css.html">O CSS</a>
+            <a href="/nauka-js.html">O JavaScript</a>
+        </nav>
+    </header>
 
-	<main>
-		<header id="top">
-			<h1>O JavaScript</h1>
-		</header>
+    <main>
+        <header id="top">
+            <h1>O JavaScript</h1>
+        </header>
 
-		<section>
-			<h2>Notatki z WTF: Co Ten Frontend</h2>
-			
+        <section>
+            <h2>Notatki z WTF: Co Ten Frontend</h2>
+
             <article>
-				<h3>Moduł III</h3>
-				<p>GIT i inne</p>
+                <h3>Moduł III</h3>
+                <p>GIT i inne</p>
 
-				<section>
-					<h4>JavaScript</h4>
+                <section>
+                    <h4>JavaScript</h4>
                     <p>JS bazuje na ECMA</p>
                     <p class="czerwony">Uzupelnic reszte</p>
+                </section>
+
+            </article>
+
+            <article>
+                <h3>Moduł IV</h3>
+                <p>CSS - pozycjonowanie, JS, Serwer, DOM</p>
+
+                <section>
+                    <h4>Deklarowanie zmiennych</h4>
+                    <p>const - stala wartosc</p>
+                    <p>let - zmienna ktora moze zmieniac swoja wartosc, nie naduzywamy let, np.
+                        <code>isHappy=true;, isHappy=false;, isHappy='Tak';</code></p>
+                    <p> JavaScript jest językiem nietypowanym, co oznacza, że zmienna łyknie wszystko</p>
+                    <p>typeof zmienna - zwraca informacje jakiego typu jest zmienna</p>
+                    <img src="/typyproste.png">
+                    <p>immutability - niemutowalnosc - fundamentalny koncept JS - nie mozemy zmieniac wartosci primitive
+                        values (np. liczby), to co zmieniamy to polaczenie miedzy nimi a zmiennymi</p>
+                </section>
+
+                <section>
+					<h4>DOM</h4>
+					<p>w JS: <code>document.querySelector('.selector')</code> jest do wysweitlania selektora np. headingu albo elementu opisanego class, zwraca node (wezel) z HTMLa </p>
+					<p>w jQuery: <code>$('.selector')</code></p>
+					<p>w BEM: block__element--js - nie do stylowania tylko wykorzystywania w JS, np. page-header__heading-js</p>
+					<p>jesli w LiveServer nie dziala od razu to <code>script DEFER src="/main.js"</code></p>
+                    <p>zmienna.innerHTML - wchodzimy do wnetrza zmiennej, mozemy ja zmienic np. header.innerHTML = 'Hej"</p>
+                    <p>console.log(header.style) - wyswietla liste mozliwego stylowania</p>
+                    <p>header.style.color = 'red' - zmiana stylu, doklada styl jako inline'owy</p>
 				</section>
 
-			</article>
-            
-		</section>
-	</main>
 
-	<footer>
-		<p>To jest stopka. <a href="#top">Idz do gory</a></p>
-	</footer>
+            </article>
 
-	<script src="main.js"></script>
+        </section>
+    </main>
+
+    <footer>
+        <p>To jest stopka. <a href="#top">Idz do gory</a></p>
+    </footer>
+
+    <script src="/main.js"></script>
 
 </body>
 
