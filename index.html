@@ -11,11 +11,11 @@
 
 <body>
 	<header>
-		<nav>
-			<a href="/index.html">Strona główna</a>
-			<a href="/nauka-html.html">O HTML</a>
-			<a href="/nauka-css.html">O CSS</a>
-			<a href="/nauka-js.html">O JavaScript</a>
+		<nav class="navigation">
+			<a class="navigation__link" href="/index.html">Strona główna</a>
+			<a class="navigation__link" href="/nauka-html.html">O HTML</a>
+			<a class="navigation__link" href="/nauka-css.html">O CSS</a>
+			<a class="navigation__link" href="/nauka-js.html">O JavaScript</a>
 		</nav>
 	</header>
 
@@ -33,29 +33,29 @@
 		<section>
 			<h2>Notatki z WTF: Co Ten Frontend</h2>
 
-			<article>
+			<article class="module">
 				<h3>Moduł I</h3>
 				<p>Omówienie czym jest frontend, konfiguracja Visual Studio, warstwy strony internetowej</p>
 
-				<section>
+				<section class="module__section">
 					<h4>Warstwy strony internetowej</h4>
 					<p>JavaScript - CSS - HTML - Treść</p>
 				</section>
 
 			</article>
 
-			<article>
+			<article class="module">
 				<h3>Moduł II</h3>
 				<p>Podstawy HTML, CSS, Devtoolsy, Fromatowanie kodu, Algorytmy, Kanban</p>
 
-				<section>
+				<section class="module__section">
 					<h4>Devtoolsy</h4>
 					<p>W devtoolsach w Stylach treść pochyła to domyślne style przeglądarkowe dla danego elementu</p>
 					<p>Edytowanie na żywo - do znacznika body dodajemy atrybut contenteditable - może być też używane
 						np. do edycji tabel na żywo</p>
 				</section>
 
-				<section>
+				<section class="module__section">
 					<h4>Formatowanie kodu</h4>
 					<p>skrót: Win - ctrl+Shift+P lub Mac - cmd+Shift+P</p>
 					<p>w konsole wpisujemy FORMAT DOCUMENT</p>
@@ -63,14 +63,14 @@
 						każdego pliku z osobna. </p>
 				</section>
 
-				<section>
+				<section class="module__section">
 					<h4>Klan</h4>
 					<p>znacznik HTML - główny korzeń, wszystkie znaczniki to węzły - nody, a relacje między nimi to rodzic i
 						dziecko
 					</p>
 				</section>
 
-				<section>
+				<section class="module__section">
 					<h4>Planowanie pracy metodą Kanban</h4>
 					<p>Trello.com - 3 podziały: TO DO, DOING, DONE. W Doing najlpeiej tylko 1 zadanie, żeby być na nim skupionym.
 					</p>
@@ -78,11 +78,11 @@
 
 			</article>
 
-			<article>
+			<article class="module">
 				<h3>Moduł III</h3>
 				<p>GIT i inne</p>
 
-				<section>
+				<section class="module__section">
 					<h4>GIT i GitHub</h4>
 					<p>GIT - system kontroli wersji</p>
 					<p>Dla Windowsa trzeba ściągnąć: https://git-scm.com/download/win</p>
@@ -107,18 +107,18 @@
 
 			</article>
 
-			<article>
+			<article class="module">
 				<h3>Moduł IV</h3>
 				<p>CSS - pozycjonowanie, JS, Serwer, DOM</p>
 
-				<section>
+				<section class="module__section">
 					<h4>Lokalny serwer</h4>
 					<p>Aby odpalic lokalny serwer nalezy sciagnac rozszerzenie/plugin LiveServer, nastepnie kliknac na dole ekranu Go Live. Wtedy strona będzie się odświeżać automatycznie po wprowadzeniu i zapisaniu zmian.
 					</p>
 					<p>W celu otwarcia na tel. komorkowym nalezy localhost 127.itd. zamienic na adres ip - IPv4 oraz ustawic na polaczenia w sieci prywatnej. Aby to zadziałało zarówno telefon jak i komputer muszą być w tej samej sieci wifi</p>
 				</section>
 
-				<section>
+				<section class="module__section">
 					<h4>DOM</h4>
 					<p>DOM - document object model</p>
 					<p>DOM jest w devtoolsach, jest to pomost dla JS, jest w devtoolsach bo mozemy podmienic np. hedaer w JS i w devtoolsach bedzie to juz mialo podmieniona wartosc</p>

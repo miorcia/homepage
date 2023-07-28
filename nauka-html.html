@@ -11,11 +11,11 @@
 
 <body>
     <header>
-        <nav>
-            <a href="/index.html">Strona główna</a>
-            <a href="/nauka-html.html">O HTML</a>
-            <a href="/nauka-css.html">O CSS</a>
-            <a href="/nauka-js.html">O JavaScript</a>
+        <nav class="navigation">
+            <a class="navigation__link" href="/index.html">Strona główna</a>
+            <a class="navigation__link" href="/nauka-html.html">O HTML</a>
+            <a class="navigation__link" href="/nauka-css.html">O CSS</a>
+            <a class="navigation__link" href="/nauka-js.html">O JavaScript</a>
         </nav>
     </header>
 
@@ -27,11 +27,11 @@
         <section>
             <h2>Notatki z WTF: Co Ten Frontend</h2>
 
-            <article>
+            <article class="module">
                 <h3>Moduł II</h3>
                 <p>Podstawy HTML, CSS, Devtoolsy, Fromatowanie kodu, Algorytmy, Kanban</p>
 
-                <section>
+                <section class="module__section">
                     <h4>Budowa znaczników</h4>
                     <p>&lt; znacznik atrybut="wartość" &gt; treść &lt; /znacznik &gt;
                     </p>
@@ -41,11 +41,11 @@
 
             </article>
 
-            <article>
+            <article class="module">
                 <h3>Moduł III</h3>
                 <p>GIT i inne</p>
 
-                <section>
+                <section class="module__section">
                     <h4>Powrót do HTML</h4>
                     <p>br to nowa linia <br> b-pogrubienie, i-kursywa, ale bez znaczenia semantycznego, tylko do
                         wyroznienia
@@ -56,7 +56,7 @@
                         i i - nie uzywamy go, to niby do okreslenia nietekstowego bledu</p>
                 </section>
 
-                <section>
+                <section class="module__section">
                     <h4>Linki</h4>
                     <p>Konstrukcja to: &lt; a href="" target="" &gt; opis &lt; /a &gt; <br> a to od anchor, uzywamy do linków
                         i łącz wewnątrz
@@ -72,7 +72,7 @@
                         tego dla kazdej strony to sa szablony</p>
                 </section>
 
-                <section>
+                <section class="module__section">
                     <h4>Images</h4>
                     <p> &lt; img src="" alt="" &gt; mozna na koncu domknac lub nie</p>
                 </section>

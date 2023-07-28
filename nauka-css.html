@@ -11,27 +11,27 @@
 
 <body>
     <header>
-        <nav>
-            <a href="/index.html">Strona główna</a>
-            <a href="/nauka-html.html">O HTML</a>
-            <a href="/nauka-css.html">O CSS</a>
-            <a href="/nauka-js.html">O JavaScript</a>
+        <nav class="navigation">
+            <a class="navigation__link" href="/index.html">Strona główna</a>
+            <a class="navigation__link" href="/nauka-html.html">O HTML</a>
+            <a class="navigation__link" href="/nauka-css.html">O CSS</a>
+            <a class="navigation__link" href="/nauka-js.html">O JavaScript</a>
         </nav>
     </header>
 
     <main>
-        <header id="top">
+        <header id="top" class="heading">
             <h1>O CSS</h1>
         </header>
 
         <section>
             <h2>Notatki z WTF: Co Ten Frontend</h2>
 
-            <article>
+            <article class="module">
                 <h3>Moduł II</h3>
                 <p>Podstawy HTML, CSS, Devtoolsy, Fromatowanie kodu, Algorytmy, Kanban</p>
                
-                <section>
+                <section class="module__section">
                     <h4>Budowa reguły CSS</h4>
                     <p>selektor {
                         właściwość: wartość;
@@ -39,18 +39,18 @@
                     </p>
                 </section>
 
-                <section>
+                <section class="module__section">
                     <h4>Linkowanie stylów CSS</h4>
                     <p>&lt; link href="style.css" rel="stylesheet" type="text/css" &gt;</p>
                 </section>
 
             </article>
 
-            <article>
+            <article class="module">
                 <h3>Moduł III</h3>
                 <p>GIT i inne</p>
 
-                <section>
+                <section class="module__section">
                     <h4>Kontynuacja CSS</h4>
                     <p>Style inline: &lt; znacznik style="color:yellow;" &gt; tresc &lt; /znacznik &gt; Style inlinowe maja
                         wieksze prawo
@@ -70,23 +70,23 @@
                     <img src="/waznoscstyli.png" alt="Waznosc styli">
                 </section>
 
-                <section>
+                <section class="module__section">
                     <h4>Smth-case czyli nazywanie plikow/klas</h4>
                     <p>camelCase, kebab-case, snake_case, PascalCase</p>
                 </section>
 
-                <section>
+                <section class="module__section">
                     <h4>Inherit czyli dziedziczenie</h4>
                     <p>w cssie wpisujemy color: inherit;</p>
                 </section>
 
             </article>
 
-            <article>
+            <article class="module">
                 <h3>Moduł IV</h3>
                 <p>CSS - pozycjonowanie, JS, Serwer, DOM</p>
 
-                <section>
+                <section class="module__section">
                     <h4>Display</h4>
                     <p>display: block - powoduje, że element zajmuje całą szerokość i spycha pozostałe elementy niżej. Działa z height i width, oraz max-width i max-height</p>
                     <p>dispaly: inline - zamienia elementy, które miały domyślny styl przeglądarki display: block, na takie, które zajmują tyle miejsca ile contentu mają w środku. Nie działa na te inline elementy width i height</p>
@@ -104,7 +104,7 @@
                     <p>overflow: visible - tresc wystaje poza kontener</p>
                 </section>
 
-                <section>
+                <section class="module__section">
                     <h4>Jednostki</h4>
                     <p>0 to zawsze 0, nie potrzebuje jednostki</p>
                     <p>px - piksele</p>
@@ -113,7 +113,7 @@
                     <p>vh - viewport height</p>
                 </section>
 
-                <section>
+                <section class="module__section">
                     <h4>Odległości</h4>
                     <p>padding-top, padding-right, padding-bottom, padding-left, albo padding: top right bottom left (jak w zegarku) albo padding: top-bottom right-left;</p>
                     <p>border-width, border-style, border-color albo border: width style color np. border 3px solid #fff;rowniez border-top, border-right itd.</p>
@@ -123,7 +123,7 @@
                     <img src="/content-border-box.png">
                 </section>
 
-                <section>
+                <section class="module__section">
                     <h4>Pozycjonowanie</h4>
                     <p>position: static - nie jest zdefiniowane, ale bierze pod uwage czy elementy wyswietlaja sie blokowo, jedno pod drugim</p>
                     <p>position: absolute - ustawia się względem rodzica i względem rodzica możeby go przesuwac używając top, right, botton, left ale krawedz jest liczona od 0x 0y rodzica np. diva ale nie liczymy bordera. Służy np. do przyklejenia czegoś do dołu kontenera i nawet jeśli zwięszymy wielkość kontenera to ten element zostanie przyklejony</p>
@@ -135,13 +135,13 @@
                     <p>float: left - treść opływa dookoła ten element. Nie poleca uzywania tego, ale mozna do obrazka wrzucic, bo nie służy do budowania layoutów, np wyswietlania menu bocznego. Do czyszczenia elementow miedzy dwoma floatami, aby tresc spadnia podnizej tych dwoch sluzy clear: both, ale div z taka klasa tez musi istnieć</p>
                 </section>
 
-                <section>
+                <section class="module__section">
                     <h4>Ujednolicanie stylów</h4>
                     <p>Normalizacja - ujednolicanie stylow miedzy przegladarkami, normalize.css - sciagnac link z githuba</p>
                     <p>Reset - uzycie gwiazdki <code>* {margin:0; outline:none; - usuwa nawet obramowanie focusu, wiec lepiej nie ruszac}</code> powoduje ze wszystkie style są brane pod uwagę, odchodzi do lamusa. Dla innych to moze byc <code>*, *:before, *:hover {}</code></p>
                 </section>
 
-                <section>
+                <section class="module__section">
                     <h4>BEM</h4>
                     <p>BEM = B - block E - element M - modifier, sposob zapisu klas</p>
                     <p><code>block__element--modifier</code></p>

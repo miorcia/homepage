@@ -11,27 +11,27 @@
 
 <body>
     <header>
-        <nav>
-            <a href="/index.html">Strona główna</a>
-            <a href="/nauka-html.html">O HTML</a>
-            <a href="/nauka-css.html">O CSS</a>
-            <a href="/nauka-js.html">O JavaScript</a>
+        <nav class="navigation">
+            <a class="navigation__link" href="/index.html">Strona główna</a>
+            <a class="navigation__link" href="/nauka-html.html">O HTML</a>
+            <a class="navigation__link" href="/nauka-css.html">O CSS</a>
+            <a class="navigation__link" href="/nauka-js.html">O JavaScript</a>
         </nav>
     </header>
 
     <main>
-        <header id="top">
+        <header id="top" class="heading">
             <h1>O JavaScript</h1>
         </header>
 
         <section>
             <h2>Notatki z WTF: Co Ten Frontend</h2>
 
-            <article>
+            <article class="module">
                 <h3>Moduł III</h3>
                 <p>GIT i inne</p>
 
-                <section>
+                <section class="module__section">
                     <h4>JavaScript</h4>
                     <p>JS bazuje na ECMA</p>
                     <p class="czerwony">Uzupelnic reszte</p>
@@ -39,11 +39,11 @@
 
             </article>
 
-            <article>
+            <article class="module">
                 <h3>Moduł IV</h3>
                 <p>CSS - pozycjonowanie, JS, Serwer, DOM</p>
 
-                <section>
+                <section class="module__section">
                     <h4>Deklarowanie zmiennych</h4>
                     <p>const - stala wartosc</p>
                     <p>let - zmienna ktora moze zmieniac swoja wartosc, nie naduzywamy let, np.
@@ -55,7 +55,7 @@
                         values (np. liczby), to co zmieniamy to polaczenie miedzy nimi a zmiennymi</p>
                 </section>
 
-                <section>
+                <section class="module__section">
 					<h4>DOM</h4>
 					<p>w JS: <code>document.querySelector('.selector')</code> jest do wysweitlania selektora np. headingu albo elementu opisanego class, zwraca node (wezel) z HTMLa </p>
 					<p>w jQuery: <code>$('.selector')</code></p>
