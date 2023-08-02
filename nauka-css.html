@@ -67,7 +67,7 @@
                     <p>Łączenie selektorow: w stylach - section a i wtedy wszystkie a w section maja dana wlasnosc lub
                         np klasy
                         my-article p</p>
-                    <img src="/waznoscstyli.png" alt="Waznosc styli">
+                    <img class="module__section-image" src="/waznoscstyli.png" alt="Waznosc styli">
                 </section>
 
                 <section class="module__section">
@@ -120,7 +120,7 @@
                     <p>border-radius - działa też bez definicji ramki, piksele lub procenty</p>
                     <p>margin - tak jak padding z tym, ze jesli dwa elementy wystepuja obok siebie np. box i box-2 i jeden bedzie mial 100px a drugi 120px to one na siebie nachodza i odleglosc miedzy box a box-2 bedzie wynosila 120px, ponnadto margin: top-bottom auto spowoduje ze element zostanie wysrodkowany</p>
                     <p>box-sizing: content-box (domyslnie, nie trzeba ustawiac) lub border-box - width i height sie bardziej licza, a nie content, czyli jesli ustawimy width: 200px to jaki by nie był padding czy border, box zawsze będzie mial 200px szerokosci, a content sie dostosuje do paddingu i bordera</p>
-                    <img src="/content-border-box.png">
+                    <img class="module__section-image" src="/content-border-box.png">
                 </section>
 
                 <section class="module__section">
@@ -154,9 +154,11 @@
         </section>
     </main>
 
-    <footer>
-        <p>To jest stopka. <a href="#top">Idz do gory</a></p>
-    </footer>
+	<footer class="footer">
+		<p class="footer__content">To jest stopka. </p> 
+		<a class="footer__top-link" href="#top">Idz do gory</a>
+		<p class="footer__content footer__date--js"></p>
+	</footer>
 
     <script src="/main.js"></script>
 

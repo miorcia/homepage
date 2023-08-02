@@ -17,3 +17,9 @@ header.innerHTML = 'Co żem frontend';
 console.log(header.style);
 
 header.style.color = 'red';
+
+const footerDate = document.querySelector('.footer__date--js');
+
+const today = new Date();
+
+footerDate.innerHTML = String(today);
